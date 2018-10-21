@@ -20,7 +20,7 @@ class Signin extends CI_Controller {
     function index(){
 		//$data['header'] = $this->load->view('common/header');
 		//modules::run('Common/index'); 
-        $this->load->view('blank');
+        $this->load->view('template/header');
     }
     
     public function create(){

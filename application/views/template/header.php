@@ -1,3 +1,4 @@
+<?php echo "mm,dnksdgsk";die;  ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
