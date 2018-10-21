@@ -8,7 +8,6 @@
 <link href="<?php echo base_url(); ?>vendor/theme/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 <link href="<?php echo base_url(); ?>vendor/theme/vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
 <link href="<?php echo base_url(); ?>vendor/theme/css/sb-admin.css" rel="stylesheet">
-
 <script src="<?php echo base_url(); ?>vendor/theme/vendor/jquery/jquery.min.js"></script>
 <script src="<?php echo base_url(); ?>vendor/theme/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="<?php echo base_url(); ?>vendor/theme/vendor/jquery-easing/jquery.easing.min.js"></script>
