@@ -1,19 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="<?php echo base_url('vendor/bootstrap_4/css/bootstrap.min.css'); ?>" >
-  <script src="<?php echo base_url('vendor/jquery_3.3.1/jquery.min.js'); ?>"></script>
-<!--   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script> -->
-  <script src="<?php echo base_url('vendor/bootstrap_4/js/bootstrap.min.js'); ?> "></script>
-</head>
-<body>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>SB Admin - Blank Page</title>
+<link href="<?php echo base_url(); ?>vendor/theme/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="<?php echo base_url(); ?>vendor/theme/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+<link href="<?php echo base_url(); ?>vendor/theme/vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+<link href="<?php echo base_url(); ?>vendor/theme/css/sb-admin.css" rel="stylesheet">
 
-<div class="jumbotron text-center">
-  <h1>My First Bootstrap Page</h1>
-  <p>Resize this responsive page to see the effect!</p> 
-</div>
-  
-
+<script src="<?php echo base_url(); ?>vendor/theme/vendor/jquery/jquery.min.js"></script>
+<script src="<?php echo base_url(); ?>vendor/theme/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="<?php echo base_url(); ?>vendor/theme/vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="<?php echo base_url(); ?>vendor/theme/js/sb-admin.min.js"></script>
