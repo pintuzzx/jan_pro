@@ -17,21 +17,13 @@ class Signin extends CI_Controller {
         $this->load->database();
     }
 
-    function index() {
-        $data['title'] = 'Signin';
-
-        $this->form_validation->set_rules('username', 'Username', 'required');
-        $this->form_validation->set_rules('password', 'Password', 'required');
-
-        if ($this->form_validation->run() === FALSE) {
-            $this->load->view('signin', $data);
-        } else {
-            redirect('Signin/create');
-        }
+    function index(){
+		//$data['header'] = $this->load->view('common/header');
+		//modules::run('Common/index'); 
+        $this->load->view('blank');
     }
     
-    public function create()
-    {
+    public function create(){
         $this->load->view('template/header');
         $this->load->view('template/content');
         $this->load->view('template/footer');
