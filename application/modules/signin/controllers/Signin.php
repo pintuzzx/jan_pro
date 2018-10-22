@@ -18,39 +18,11 @@ class Signin extends CI_Controller {
     }
 
     function index(){
-		//$data['header'] = $this->load->view('common/header');
-		//modules::run('Common/index'); 
-        $this->load->view('template/header');
+		$data['header'] = $this->load->view('template/header','',true);
+		$data['topnav'] = $this->load->view('template/topbarnav','',true);
+		$data['sidenav'] = $this->load->view('template/sidenav','',true);
+		$data['main_body'] = $this->load->view('blank',$data,true);
+		$data['footer'] = $this->load->view('template/footer',$data,true);
+        $this->load->view('template/index',$data);
     }
-    
-    public function create(){
-        $this->load->view('template/header');
-        $this->load->view('template/content');
-        $this->load->view('template/footer');
-    }
-    public function insert()
-    {
-        $this->load->view('template/header');
-        $this->load->view('create');
-        $this->load->view('template/footer');
-    }
-    public function ajax()
-    {
-        
-        $data = array(
-            'name' => $this->input->post('name'),
-            //'name' => $this->input->post('name'),
-            'class' => $this->input->post('class'),
-            'role' => $this->input->post('role'),
-            'sal' => $this->input->post('salary'),
-            'pic' => $this->input->post('pic')
-        );
-        print_r($data);die;
-        $result = $this->db->insert('emp_info', $data);
-       return json_encode($result);
-    }
-
 }
-
-/* End of file signin.php */
-/* Location: ./application/modules/signin/controllers/signin.php */

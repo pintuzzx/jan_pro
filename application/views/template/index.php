@@ -5,7 +5,8 @@
   </head>
 
   <body id="page-top">
-	<?php print_r($main_body); ?>
+	<?php if(isset($topnav)){ print_r($topnav); } ?>
+    <?php if(isset($sidenav)){ print_r($sidenav); } ?>
+	<?php if(isset($footer)){ print_r($footer); } ?>
   </body>
-
 </html>

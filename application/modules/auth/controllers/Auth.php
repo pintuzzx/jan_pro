@@ -40,15 +40,19 @@ class Auth extends CI_Controller
 		{
 			// set the flash data error message if there is one
 			$this->data['message'] = (validation_errors()) ? validation_errors() : $this->session->flashdata('message');
-
 			//list the users
 			$this->data['users'] = $this->ion_auth->users()->result();
 			foreach ($this->data['users'] as $k => $user)
 			{
 				$this->data['users'][$k]->groups = $this->ion_auth->get_users_groups($user->id)->result();
 			}
-
-			$this->_render_page('auth' . DIRECTORY_SEPARATOR . 'index', $this->data);
+			
+			$this->data['header'] = $this->load->view('template/header','',true);
+			$this->data['topnav'] = $this->load->view('template/topbarnav','',true);
+			$this->data['sidenav'] = $this->load->view('template/sidenav','',true);
+			$this->data['main_body'] = $this->load->view('index',$this->data,true);
+			$this->data['footer'] = $this->load->view('template/footer',$this->data,true);
+			$this->load->view('template/index',$this->data);
 		}
 	}
 
