@@ -1,4 +1,3 @@
-rahul sinha
 <?php
 /**
  * CodeIgniterffg
